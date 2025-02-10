@@ -10,4 +10,5 @@
     <color name="color_Main">#5D8736</color>
     <color name="color_Light">#A9C46C</color>
     <color name="color_Middle">#809D3C</color>
+    <color name="color_Transparent">#00F44336</color>
 </resources>

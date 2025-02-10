@@ -24,6 +24,7 @@
             android:gravity="center"
             android:textSize="150px"
             android:padding="10dp"
+            android:layout_margin="20dp"
             android:text="Welcome to Cash Map!"
             android:textColor="@color/white"/>
     </LinearLayout>
@@ -36,5 +37,71 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout_main">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Select a Card (This may be changed later.)"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="10dp"
+            android:gravity="left"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ScrollView
+            android:id="@+id/scrollView_Cards"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/begin_Button"
+            android:contentDescription="@string/app_name">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_Cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/card_mastercard" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/card_visa" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/card_chinabank" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/begin_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Begin"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/color_Main"
+            app:layout_constraintTop_toBottomOf="@id/scrollView_Cards"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
