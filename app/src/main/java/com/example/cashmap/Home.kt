@@ -8,16 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class OnBoarding : AppCompatActivity() {
+class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_on_boarding)
+        setContentView(R.layout.activity_home)
 
-        val beginButton = findViewById<Button>(R.id.begin_Button)
+        val buttonChangeBank = findViewById<Button>(R.id.button_ChangeBank)
 
-        beginButton.setOnClickListener {
-            val intent = Intent(this, Home::class.java)
+        buttonChangeBank.setOnClickListener {
+            val intent = Intent(this, OnBoarding::class.java)
             startActivity(intent)
         }
     }

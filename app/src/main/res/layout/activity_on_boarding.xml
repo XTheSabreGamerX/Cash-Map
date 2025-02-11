@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context=".OnBoarding">
 
     <LinearLayout
@@ -71,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/app_name"
-                    android:background="@android:color/transparent"
+                    android:background="@color/dark_gray"
                     app:srcCompat="@drawable/card_mastercard" />
 
                 <ImageButton
@@ -79,14 +80,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/app_name"
-                    android:background="@android:color/transparent"
+                    android:background="@color/dark_gray"
+                    android:layout_marginTop="10dp"
                     app:srcCompat="@drawable/card_visa" />
 
                 <ImageButton
                     android:id="@+id/imageButton3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
+                    android:background="@color/dark_gray"
+                    android:layout_marginTop="10dp"
                     android:contentDescription="@string/app_name"
                     app:srcCompat="@drawable/card_chinabank" />
             </LinearLayout>
