@@ -15,10 +15,17 @@ class Home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val buttonChangeBank = findViewById<Button>(R.id.button_ChangeBank)
+        val buttonMap = findViewById<Button>(R.id.button_Map)
 
         buttonChangeBank.setOnClickListener {
             val intent = Intent(this, OnBoarding::class.java)
             startActivity(intent)
         }
+
+        buttonMap.setOnClickListener {
+            val intent = Intent(this, Map::class.java)
+            startActivity(intent)
+        }
+
     }
 }
